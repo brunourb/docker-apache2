@@ -1,0 +1,5 @@
+docker run -it -v /tmp:/tmp --name apache2 -h apache2 ubuntu:latest /bin/bash
+
+#apt update
+#apt install apache2 apache2-utils -y
+#apt install lsof net-tools iputils-ping vim tree -y
