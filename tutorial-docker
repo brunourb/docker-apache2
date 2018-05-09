@@ -3,3 +3,9 @@ docker run -it -v /tmp:/tmp --name apache2 -h apache2 ubuntu:latest /bin/bash
 #apt update
 #apt install apache2 apache2-utils -y
 #apt install lsof net-tools iputils-ping vim tree -y
+#echo "ServerName localhost" >> /etc/apache2/apache2.conf
+#service apache2 start
+#Digitar:ifconfig para verificar o ip. Acessar o ip na porta 80.
+#cd /etc/apache2/sites-available
+touch teotonio.com.br.conf
+vim teotonio.com.br.conf
